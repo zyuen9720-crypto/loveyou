@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Anh bé tặng Yến nìi 💜</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Segoe UI',sans-serif;
+
+background:linear-gradient(135deg,#ffd6ec,#f3c6ff,#e5c9ff);
+
+overflow:hidden;
+}
+
+/* hộp quà */
+
+.gift{
+font-size:120px;
+cursor:pointer;
+transition:transform 0.3s;
+}
+
+.gift:hover{
+transform:scale(1.1);
+}
+
+/* nội dung sau khi mở */
+
+.message{
+display:none;
+
+max-width:700px;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+text-align:center;
+
+animation:fade 2s;
+}
+
+h1{
+color:#c05cff;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+color:#555;
+}
+
+.heart{
+font-size:40px;
+animation:beat 1s infinite;
+}
+
+/* animation */
+
+@keyframes beat{
+0%{transform:scale(1)}
+50%{transform:scale(1.2)}
+100%{transform:scale(1)}
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+/* tim bay */
+
+.floating span{
+
+position:absolute;
+
+font-size:22px;
+
+animation:float 7s linear infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-10vh);
+opacity:0;
+}
+
+.typing {
+overflow: hidden;
+white-space: nowrap;
+border-right: 3px solid pink;
+animation: typing 5s steps(60,end) forwards;
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+</style>
+</head>
+
+<body>
+
+<div id="gift" class="gift">🎁</div>
+
+<div id="message" class="message">
+
+<h1>Anh iu e nhìu lắmm 💜</h1>
+
+<p class="typing">
+Từ lúc mình mới quen nhau tới nay được 3 ngày thôi nhưng thật sự anh có một cảm giác rất quen thuộc.
+</p>
+
+<p class="typing">
+mình đã cười với nhau thật nhiều, có những câu chuyện mà sau đó mình lại hiểu nhau hơn một chút.
+</p>
+
+<p class="typing">
+Mặc dù là chúng ta bị ngăn cách bởi địa lí, nhưng mà với anh thì anh không ngại để cố gắng một ngày gần nhất được ở bên em để nói trực tiếp anh đã yêu em mất rồi.
+</p>
+
+<p class="typing">
+mặc dù sẽ còn nhiều hạn chế, nhưng tình cảm anh dành cho em là thật lòng, yêu Yến nhìu lắm ạa 💜
+</p>
+
+<p class="typing">
+Em đồng ý làm người yêu anh nhée💗
+</p>
+
+<div class="heart">💗</div>
+
+</div>
+
+<div class="floating">
+<span style="left:10%">💗</span>
+<span style="left:20%">💜</span>
+<span style="left:35%">💗</span>
+<span style="left:50%">💜</span>
+<span style="left:65%">💗</span>
+<span style="left:80%">💗</span>
+<span style="left:90%">💜</span>
+</div>
+
+<audio autoplay loop>
+<source src="Dangrangto - Love is (Official MV) [h52PcEuzUUA] (1).mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+let gift=document.getElementById("gift");
+let message=document.getElementById("message");
+let music=document.getElementById("music");
+
+gift.onclick=function(){
+
+gift.style.display="none";
+
+message.style.display="block";
+
+music.play();
+
+}
+
+</script>
+
+</body>
+</html>
